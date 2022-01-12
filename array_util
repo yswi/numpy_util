@@ -1,0 +1,7 @@
+import numpy as np
+import copy
+
+def delete_by_value(np_array, value):
+  np_array_ = copy.deepcopy(np_array)
+  np.delete(np_array_,  np.where(value ==  0))
+  return np_array
